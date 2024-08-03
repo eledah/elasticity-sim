@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "name": "Node 1",
+      "isStatic": false
+    },
+    {
+      "id": "node2",
+      "name": "Node 2",
+      "isStatic": true
+    },
+    {
+      "id": "node3",
+      "name": "Node 3",
+      "isStatic": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "node1",
+      "target": "node2",
+      "weight": 0.5
+    },
+    {
+      "source": "node2",
+      "target": "node3",
+      "weight": 1.0
+    },
+    {
+      "source": "node3",
+      "target": "node1",
+      "weight": 0.7
+    }
+  ],
+  "graphSettings": {
+    "centerForce": 0.01,
+    "repelForce": 300,
+    "linkForce": 1,
+    "linkDistance": 100
+  }
+}
